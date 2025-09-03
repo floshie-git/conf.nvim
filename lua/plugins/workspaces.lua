@@ -2,9 +2,12 @@ return {
 	"natecraddock/workspaces.nvim",
 	opts = {
 		auto_open = true,
-		auto_dir = true
+		auto_dir = true,
+    hooks = {
+      open = "Neotree source=filesystem reveal=true position=left"
+    }
 	},
-	hooks = {
-		open = "Neotree source=filesystem reveal=true position=right"
-	}
+  dependencies = {
+    "nvim-neo-tree/neo-tree.nvim"
+  }
 }
